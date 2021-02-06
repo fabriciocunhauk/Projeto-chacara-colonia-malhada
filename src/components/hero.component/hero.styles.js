@@ -62,13 +62,15 @@ export const HeroImage = styled.img`
 `;
 
 export const HeroContent = styled.div`
-    position: relative;
-    z-index: 100%;
+    position: absolute;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     max-width: 1600px;
     width: calc(100% - 100px);
     color: #fff;
+    top: 40%;
+    left: 5%;
 
     h1 {
         /* Responsive fonts */

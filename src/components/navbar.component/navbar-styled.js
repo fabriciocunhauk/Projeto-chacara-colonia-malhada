@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/macro';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { AiOutlineBars } from 'react-icons/ai';
 
 

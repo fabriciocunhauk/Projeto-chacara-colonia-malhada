@@ -5,7 +5,7 @@ import { Container, Section, ColumnLeft, ColumnRight } from './info-section.styl
 
 function InfoSection({ heading, paragraphOne, paragraphTwo, buttonLabel, reverse, image }) {
     return (
-        <div>
+        <div id="about-section">
             <Section>
                 <Container>
                     <ColumnLeft>

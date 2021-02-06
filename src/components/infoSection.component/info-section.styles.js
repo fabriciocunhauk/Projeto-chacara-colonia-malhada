@@ -12,9 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.div`
-    width: 100%;
-    height: 100%;
-    padding: 4rem 0rem;
+    width: 100vw;
 `;
 
 export const ColumnLeft = styled.div`
@@ -48,8 +46,8 @@ export const ColumnRight = styled.div`
     }
 
     img {
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 70%;
         object-fit: cover;
 
         @media screen and (max-width: 768px) {

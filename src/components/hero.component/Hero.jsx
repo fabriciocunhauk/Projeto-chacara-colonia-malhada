@@ -62,6 +62,18 @@ const Hero = ({ slides }) => {
 
     return (
         <HeroSection>
+            <HeroContent>
+                <h1>Colonia Malhada</h1>
+                <p>R$ 700 / noite</p>
+                <Button href="https://www.airbnb.com.br/rooms/45446453?adults=1&federated_search_id=eee863d2-8ac6-4c83-82b3-5a34224fd5e4&source_impression_id=p3_1611960250_CXAxbCtuBl9YFzzn&guests=1"
+                    primary='true'
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    css={`max-width: 160px;`}>
+                    airbnb
+                    <Arrow />
+                </Button>
+            </HeroContent>
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return (
@@ -69,14 +81,6 @@ const Hero = ({ slides }) => {
                             {index === current && (
                                 <HeroSlider>
                                     <HeroImage src={slide.image} alt={slide.alt} />
-                                    <HeroContent>
-                                        <h1>{slide.title}</h1>
-                                        <p>{slide.price}</p>
-                                        <Button to={slide.path} primary='true' css={`max-width: 160px;`}>
-                                            {slide.label}
-                                            <Arrow />
-                                        </Button>
-                                    </HeroContent>
                                 </HeroSlider>
                             )}
                         </HeroSlide>

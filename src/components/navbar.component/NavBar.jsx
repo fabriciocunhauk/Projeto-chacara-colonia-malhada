@@ -8,7 +8,7 @@ import { Button } from '../button.component/Button';
 const NavBar = ({ toggle }) => {
     return (
         <Nav>
-            <Logo to='/' >ELIXR</Logo>
+            <Logo to='/' >Chacara</Logo>
             <MenuBars onClick={toggle} />
             <NavMenu>
                 {menuData.map((item, index) => (
@@ -19,7 +19,7 @@ const NavBar = ({ toggle }) => {
             </NavMenu>
             <NavBtn>
                 <Button to='/contact' primary='true'>
-                    Contact Us
+                    Contato
                 </Button>
             </NavBtn>
         </Nav>
