@@ -46,8 +46,8 @@ export const ColumnRight = styled.div`
     }
 
     img {
-        width: 70%;
-        height: 70%;
+        width: 60%;
+        height: 60%;
         object-fit: cover;
 
         @media screen and (max-width: 768px) {

@@ -63,7 +63,7 @@ const Hero = ({ slides }) => {
     }
 
     return (
-        <HeroSection>
+        <HeroSection id="main">
             <HeroContent>
                 <h1>Colonia Malhada</h1>
                 <p>R$ 700 / Noite</p>

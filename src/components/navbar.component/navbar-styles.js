@@ -8,6 +8,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     background: #00A699;
+    box-shadow: 1px 1px 10px black;
     padding: 1rem 2rem;
     z-index: 100;
     position: fixed;
@@ -20,6 +21,7 @@ const NavLink = css`
     align-items: center;
     padding: 0 1rem;
     height: 100%;
+    cursor: pointer;
 `;
 
 export const Logo = styled(Link)`

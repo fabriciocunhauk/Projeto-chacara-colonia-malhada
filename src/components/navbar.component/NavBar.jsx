@@ -8,7 +8,7 @@ import { Button } from '../button.component/Button';
 const NavBar = ({ toggle }) => {
     return (
         <Nav>
-            <Logo to='/' >Chacara</Logo>
+            <Logo to='main' >Chacara</Logo>
             <MenuBars onClick={toggle} />
             <NavMenu>
                 {menuData.map((item, index) => (

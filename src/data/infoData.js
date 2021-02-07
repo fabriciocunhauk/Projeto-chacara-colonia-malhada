@@ -1,4 +1,4 @@
-import imageOne from '../images/home-interior-1.jpg';
+import imageOne from '../images/house-8.jpg';
 import imageTwo from '../images/home-interior-2.jpg';
 
 export const InfoData = {
