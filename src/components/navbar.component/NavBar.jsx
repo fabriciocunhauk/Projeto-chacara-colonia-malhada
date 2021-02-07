@@ -2,7 +2,7 @@ import React from 'react';
 
 import { menuData } from '../../data/MenuData';
 
-import { Nav, Logo, MenuBars, NavMenu, NavBtn, NavMenuLinks } from './navbar-styled';
+import { Nav, Logo, MenuBars, NavMenu, NavBtn, NavMenuLinks } from './navbar-styles';
 import { Button } from '../button.component/Button';
 
 const NavBar = ({ toggle }) => {

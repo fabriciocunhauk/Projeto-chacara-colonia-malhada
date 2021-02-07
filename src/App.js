@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ContactSection from './components/contactSection.component/ContactSection';
 import Dropdown from './components/dropdown.component/Dropdown';
 import GalerySection from './components/galerySection.component/GalerySection';
 import Hero from './components/hero.component/Hero';
@@ -26,6 +27,7 @@ function App() {
       <Hero slides={SliderData} />
       <InfoSection {...InfoData} />
       <GalerySection />
+      <ContactSection />
     </>
   );
 }
