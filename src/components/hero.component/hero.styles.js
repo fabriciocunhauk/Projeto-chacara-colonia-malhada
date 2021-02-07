@@ -111,7 +111,8 @@ const ArrowButtons = css`
     transition: 0.3s;
 
     &:hover {
-        background: #cd853f;
+        background: #00A699;
+        color: black;
         transform: scale(1.05)
     }
 `;
