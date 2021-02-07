@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components/macro';
-import { Link } from 'react-scroll';
 import { AiOutlineBars } from 'react-icons/ai';
+import { Link } from 'react-scroll';
 
 
 export const Nav = styled.nav`
     height: 60px;
     display: flex;
     justify-content: space-between;
+    background: #00A699;
     padding: 1rem 2rem;
     z-index: 100;
     position: fixed;
@@ -19,11 +20,11 @@ const NavLink = css`
     align-items: center;
     padding: 0 1rem;
     height: 100%;
-    cursor: pointer;
 `;
 
 export const Logo = styled(Link)`
     ${NavLink}
+    font-size: 20px;
     font-style: italic;
 `;
 

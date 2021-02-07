@@ -12,7 +12,7 @@ const NavBar = ({ toggle }) => {
             <MenuBars onClick={toggle} />
             <NavMenu>
                 {menuData.map((item, index) => (
-                    <NavMenuLinks to={item.link} key={index} >
+                    <NavMenuLinks to={item.link} key={index} smooth={true} duration={500}>
                         {item.title}
                     </NavMenuLinks>
                 ))}

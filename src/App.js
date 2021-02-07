@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Dropdown from './components/dropdown.component/Dropdown';
+import GalerySection from './components/galerySection.component/GalerySection';
 import Hero from './components/hero.component/Hero';
 import InfoSection from './components/infoSection.component/InfoSection';
 import NavBar from './components/navbar.component/NavBar';
@@ -24,6 +25,7 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Hero slides={SliderData} />
       <InfoSection {...InfoData} />
+      <GalerySection />
     </>
   );
 }
