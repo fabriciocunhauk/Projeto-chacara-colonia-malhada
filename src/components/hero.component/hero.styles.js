@@ -74,18 +74,23 @@ export const HeroContent = styled.div`
 
     h1 {
         /* Responsive fonts */
-        font-size: clamp(1rem, 8vw, 2rem);  
-
-        font-weight: 400;
+        font-size: clamp(1rem, 8vw, 2.5rem);  
+        font-weight: bold;
         text-transform: uppercase;
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 2px 10px black;
         text-align: left;
         margin-bottom: 0.8rem;
     }
 
     p {
+        font-weight: bold;
         margin-bottom: 1.2rem;
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 2px 10px black;
+    }
+
+    .airbnb-logo {
+        width: 25px;
+        margin-right: 20px;
     }
 `;
 

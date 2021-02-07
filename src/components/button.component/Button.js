@@ -7,7 +7,9 @@ export const Button = styled.a`
     border: none;
     min-width: 100px;
     max-width: 200px;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 1px 1px 10px white;
     transition: 0.3s;
     display: flex;
     justify-content: center;

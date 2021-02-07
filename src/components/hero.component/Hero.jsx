@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import { Button } from '../button.component/Button';
 
+import airbnbLogo from '../../images/SVG/airbnb-brands.svg'
+
 import {
     HeroSection,
     HeroWrapper,
@@ -64,13 +66,14 @@ const Hero = ({ slides }) => {
         <HeroSection>
             <HeroContent>
                 <h1>Colonia Malhada</h1>
-                <p>R$ 700 / noite</p>
+                <p>R$ 700 / Noite</p>
                 <Button href="https://www.airbnb.com.br/rooms/45446453?adults=1&federated_search_id=eee863d2-8ac6-4c83-82b3-5a34224fd5e4&source_impression_id=p3_1611960250_CXAxbCtuBl9YFzzn&guests=1"
                     primary='true'
                     rel="noopener noreferrer"
                     target="_blank"
+                    style={{ background: '#FF5A5F' }}
                     css={`max-width: 160px;`}>
-                    airbnb
+                    <img src={airbnbLogo} alt="airbnb-button" className="airbnb-logo" /> airbnb
                     <Arrow />
                 </Button>
             </HeroContent>
