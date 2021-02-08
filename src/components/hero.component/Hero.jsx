@@ -17,7 +17,6 @@ import {
     NextArrow
 } from './hero.styles';
 
-
 const Hero = ({ slides }) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;

@@ -9,7 +9,7 @@ import NavBar from './components/navbar.component/NavBar';
 import { InfoData } from './data/infoData';
 
 
-import { SliderData } from './data/SliderData';
+import { SliderImages } from './data/SliderImages';
 
 import { GlobalStyles } from './styles/global';
 
@@ -25,7 +25,7 @@ function App() {
       <GlobalStyles />
       <NavBar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
-      <Hero slides={SliderData} />
+      <Hero slides={SliderImages} />
       <InfoSection {...InfoData} />
       <GalerySection />
       <ContactSection />
