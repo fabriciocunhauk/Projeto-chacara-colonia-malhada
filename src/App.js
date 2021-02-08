@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ContactSection from './components/contactSection.component/ContactSection';
 import Dropdown from './components/dropdown.component/Dropdown';
+import Footer from './components/footer.component/Footer';
 import GalerySection from './components/galerySection.component/GalerySection';
 import Hero from './components/hero.component/Hero';
 import InfoSection from './components/infoSection.component/InfoSection';
@@ -28,6 +29,7 @@ function App() {
       <InfoSection {...InfoData} />
       <GalerySection />
       <ContactSection />
+      <Footer />
     </>
   );
 }
