@@ -4,7 +4,7 @@ import { FooterContainer } from './footer.styles';
 const Footer = () => {
     return (
         <FooterContainer>
-            <h1>Footer</h1>
+            <a href="https://portfolio-amsqtnmph.vercel.app/" alt="copyright" rel="noopener noreferrer" target="_blank">© Fabricio Cunha</a>
         </FooterContainer>
     )
 }
