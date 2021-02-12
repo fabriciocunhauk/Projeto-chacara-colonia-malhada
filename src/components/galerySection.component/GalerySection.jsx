@@ -5,6 +5,7 @@ import { GalerySectionContainer, GaleryCardContainer, CardImage } from './galery
 const GalerySection = () => {
     return (
         <GalerySectionContainer id="galery-section">
+            <h1>Galeria</h1>
             <GaleryCardContainer>
                 {galeryPhotos.map(image => {
                     return <CardImage src={image.photo} key={image.id} />
