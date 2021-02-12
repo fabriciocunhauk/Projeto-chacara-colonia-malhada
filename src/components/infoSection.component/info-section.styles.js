@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
+export const Section = styled.div`
+    width: 100vw;
+`;
+
 export const Container = styled.div`
-    padding: 3rem calc((100vw - 1300px) / 2);
+    padding: 1rem calc((100vw - 1300px) / 2);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 800px;
+    grid-template-rows: 750px;
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
     }
-`;
-
-export const Section = styled.div`
-    width: 100vw;
 `;
 
 export const ColumnLeft = styled.div`

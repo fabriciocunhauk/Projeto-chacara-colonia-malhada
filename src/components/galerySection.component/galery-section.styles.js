@@ -2,8 +2,12 @@ import styled from 'styled-components';
 import gasleryBackground from '../../images/outside-area-16.jpg';
 
 export const GalerySectionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 100vw;
+    margin-top: 40px;
     position: relative;
     background-image: url(${gasleryBackground});
     background-position: center;
@@ -12,7 +16,9 @@ export const GalerySectionContainer = styled.div`
     z-index: 0;
 
     h1 {
-        padding: 40px;
+        padding-top: 80px;
+        margin-bottom: 40px;
+        font-size: 50px;
         color: white;
     }
 
