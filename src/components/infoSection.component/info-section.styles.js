@@ -2,16 +2,22 @@ import styled from 'styled-components';
 
 export const Section = styled.div`
     width: 100vw;
+    height: 100%;
 `;
 
 export const Container = styled.div`
-    padding: 1rem calc((100vw - 1300px) / 2);
+    padding: 3rem calc((100vw - 1300px) / 2);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 750px;
+    grid-template-rows: 1000px;
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 1400px) {
+        padding: 1rem;
+        grid-template-rows: 750px;
     }
 `;
 
