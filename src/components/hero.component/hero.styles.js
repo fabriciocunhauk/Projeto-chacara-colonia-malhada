@@ -7,6 +7,7 @@ export const HeroSection = styled.section`
     max-height: 1100px;
     position: relative;
     overflow: hidden;
+    z-index: 0;
 `;
 
 export const HeroWrapper = styled.div`

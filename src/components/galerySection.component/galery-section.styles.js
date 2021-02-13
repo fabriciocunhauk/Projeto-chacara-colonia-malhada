@@ -60,3 +60,53 @@ export const CardImage = styled.img`
         transform: scale(1.2);
     }
 `;
+
+export const MyImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+
+    &::before {
+        content: "";
+        background: #00A699;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: .9;
+    }
+`;
+
+export const MyImage = styled.img`
+    width: 80%;
+    height: 80%;
+
+    @media (max-width: 700px) {
+        width: 100%;
+        object-fit: contain;
+    }
+`;
+
+export const CloseButton = styled.div`
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media (max-width: 700px) {
+        top: 50px;
+        right: 20px;
+    }
+`;
