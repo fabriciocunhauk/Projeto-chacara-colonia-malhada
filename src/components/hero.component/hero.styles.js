@@ -128,10 +128,8 @@ export const SliderButtons = styled.div`
 
 export const PrevArrow = styled(IoArrowBack)`
     ${ArrowButtons}
-    
 `;
 
 export const NextArrow = styled(IoArrowForward)`
     ${ArrowButtons}
-    
 `;

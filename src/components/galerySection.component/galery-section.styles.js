@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import gasleryBackground from '../../images/outside-area-16.jpg';
+import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 
 export const GalerySectionContainer = styled.div`
     display: flex;
@@ -108,5 +109,43 @@ export const CloseButton = styled.div`
     @media (max-width: 700px) {
         top: 50px;
         right: 20px;
+    }
+`;
+
+const ArrowButtons = css`
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    background: #000d1a;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    user-select: none;
+    transition: 0.3s;
+
+    &:hover {
+        background: white;
+        color: black;
+        transform: scale(1.05)
+    }
+`;
+
+export const Forward = styled(IoArrowForward)`
+    ${ArrowButtons}
+
+    @media (max-width: 700px) {
+        right: 1px;
+        position: absolute;
+    }
+`;
+
+export const Backward = styled(IoArrowBack)`
+    ${ArrowButtons}
+
+    @media (max-width: 700px) {
+        left: 1px;
+        position: absolute;
     }
 `;
