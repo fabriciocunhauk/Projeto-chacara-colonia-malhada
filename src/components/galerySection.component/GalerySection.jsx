@@ -44,7 +44,7 @@ const GalerySection = () => {
                 })}
             </GaleryCardContainer>
             {
-                !openImage ? '' : (
+                !openImage ? null : (
                     <MyImageContainer>
                         <Backward onClick={moveBackward} />
                         <CloseButton onClick={closePhoto}>

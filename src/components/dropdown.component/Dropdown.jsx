@@ -23,7 +23,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                 <DropdownMenu>
                     {menuData.map((item, index) => {
                         return (
-                            <DropdownLink to={item.link} key={index}>
+                            <DropdownLink to={item.link} key={index} onClick={toggle}>
                                 {item.title}
                             </DropdownLink>
                         )
