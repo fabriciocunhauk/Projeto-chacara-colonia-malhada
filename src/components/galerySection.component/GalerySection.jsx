@@ -4,30 +4,35 @@ import xButton from '../../images/SVG/x-mark.svg';
 import { GalerySectionContainer, GaleryCardContainer, CardImage, MyImageContainer, MyImage, CloseButton, Forward, Backward } from './galery-section.styles';
 
 const GalerySection = () => {
-    const [photo, setPhoto] = useState(false);
+    const [openImage, setOpenImage] = useState(false);
     const [myImage, setMyImage] = useState(null);
-    const [myImageId, setMyImageId] = useState(0);
+    const [currentId, setCurrentId] = useState(0);
+    const length = galeryPhotos.length;
 
     const openPhoto = (openImage, imgId) => {
-        setPhoto(true);
+        setOpenImage(true);
         setMyImage(openImage);
-        setMyImageId(imgId);
+        setCurrentId(imgId);
     };
 
     const closePhoto = () => {
-        setPhoto(false);
+        setOpenImage(false);
     };
 
     const moveForward = () => {
-        galeryPhotos.forEach(imagem => {
-            imagem.id = myImageId + 1
-            setMyImage(imagem.photo)
-        })
+        if (currentId < length) setCurrentId(currentId + 1);
 
+        galeryPhotos.map(imagem => {
+            return imagem.id === currentId + 1 && setMyImage(imagem.photo);
+        });
     };
 
     const moveBackward = () => {
+        if (currentId > 1) setCurrentId(currentId - 1);
 
+        galeryPhotos.map(imagem => {
+            return imagem.id === currentId - 1 && setMyImage(imagem.photo);
+        });
     };
 
     return (
@@ -39,7 +44,7 @@ const GalerySection = () => {
                 })}
             </GaleryCardContainer>
             {
-                !photo ? '' : (
+                !openImage ? '' : (
                     <MyImageContainer>
                         <Backward onClick={moveBackward} />
                         <CloseButton onClick={closePhoto}>
