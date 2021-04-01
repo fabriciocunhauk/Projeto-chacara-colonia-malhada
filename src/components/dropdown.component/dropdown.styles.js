@@ -61,8 +61,3 @@ export const Icon = styled.i`
 export const CloseIcon = styled(FaTimes)`
     color: #000d1a;
 `;
-
-export const BtnWrap = styled.div`
-    display: flex;
-    justify-content: center;
-`;

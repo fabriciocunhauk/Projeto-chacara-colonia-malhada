@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100%;
 `;
@@ -10,9 +13,11 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1000px;
+    width: 90%;
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
+        width: 100%;
     }
 
     @media screen and (max-width: 1400px) {

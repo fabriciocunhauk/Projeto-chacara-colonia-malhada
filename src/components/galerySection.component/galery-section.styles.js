@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import gasleryBackground from '../../images/outside-area-16.jpg';
+import galeryBackground from '../../images/outside-area-16.jpg';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 
 export const GalerySectionContainer = styled.div`
@@ -10,7 +10,7 @@ export const GalerySectionContainer = styled.div`
     width: 100vw;
     margin-top: 40px;
     position: relative;
-    background-image: url(${gasleryBackground});
+    background-image: url(${galeryBackground});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@ export const GalerySectionContainer = styled.div`
     h1 {
         padding-top: 80px;
         margin-bottom: 40px;
-        font-size: 50px;
+        font-size: 3em;
         color: white;
     }
 
