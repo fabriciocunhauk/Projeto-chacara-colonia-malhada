@@ -4,7 +4,7 @@ import { ContactSectionContainer, Form, Label, Input, Button } from './contact-s
 const ContactSection = () => {
     return (
         <ContactSectionContainer id="contact-section">
-            <h1>Contact</h1>
+            <h1>Contato</h1>
             <Form action="submit">
                 <Label htmlFor="nome">Nome</Label>
                 <Input type="text" placeholder="Nome" id="nome" required />
