@@ -6,12 +6,12 @@ const ContactSection = () => {
         <ContactSectionContainer id="contact-section">
             <h1>Contact</h1>
             <Form action="submit">
-                <Label htmlFor="">Name</Label>
-                <Input type="text" placeholder="Name" required />
-                <Label htmlFor="">Email</Label>
-                <Input type="email" placeholder="example@email.com" required />
-                <Label htmlFor="">Phone Number</Label>
-                <Input type="tel" placeholder="Telefone" required />
+                <Label htmlFor="nome">Nome</Label>
+                <Input type="text" placeholder="Nome" id="nome" required />
+                <Label htmlFor="email">Email</Label>
+                <Input type="email" placeholder="example@email.com" id="email" required />
+                <Label htmlFor="telefone">Telefone</Label>
+                <Input type="tel" placeholder="Telefone" id="telefone" required />
                 <Button type="submit">Enviar</Button>
             </Form>
         </ContactSectionContainer>
