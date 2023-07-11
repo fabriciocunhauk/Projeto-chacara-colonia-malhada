@@ -18,7 +18,7 @@ const NavBar = ({ toggle }) => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to='/contact' primary='true'>
+                <Button primary='true' onClick={() => window.location.replace("/#contact-section")}>
                     Contato
                 </Button>
             </NavBtn>
